@@ -131,10 +131,11 @@ class Reviewer(Mentor):
 
 best_student = Student('Roy', 'Eman', 'your_gender')
 best_student.courses_in_progress += ['Python']
+best_student.finished_courses += ['Введение в программирование']
 worst_best_student = Student('Bruce', 'Lee', 'your_gender')
 worst_best_student.courses_in_progress += ['Python']
-
-some_lecurer = Lecturer('John', 'Doe')
+worst_best_student.finished_courses += ['Введение в программирование']
+some_lecurer = Lecturer('John', 'Doe') 
 some_lecurer_1 = Lecturer('Don', 'Dragon')
 some_lecurer.courses_attached += ['Python']
 some_lecurer_1.courses_attached += ['Python']
@@ -155,7 +156,8 @@ cool_mentor.rate_hw(best_student, 'Python', 10)
 cool_mentor.rate_hw(best_student, 'Python', 10)
 cool_mentor.rate_hw(best_student, 'Python', 10)
 cool_mentor.rate_hw(worst_best_student, 'Python', 8)
-# print(Student)
+print(worst_best_student)
 print(some_lecurer > some_lecurer_1)
 Student.average_stu_score('Python', average_student_score)
 Lecturer.average_lect_score('Python', average_lectors_score )
+print(best_student > worst_best_student)
